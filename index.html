@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>مطعم — Epic Bites</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <!-- ضع شعارك في images/logo.png -->
+        <a href="#home"><img src="logoo.jpg" alt="Logo"/></a>
+      </div>
+
+      <nav id="nav" class="nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-primary" id="reserveBtn">Reserve Now</button>
+        <button id="navToggle" class="nav-toggle" title="Toggle navigation" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+  <hr>
+ ""
+<section class="hero">
+  <div class="hero-content">
+    <h1>Discover Our Special Dish</h1>
+    <p>Experience the taste of perfection in every bite.</p>
+    <a href="#menu" class="btn">View Menu</a>
+  </div>
+</section>
+<section class="why-choose-us" id="why">
+  <h2>Why Choose Us</h2>
+  <div class="features">
+    <div class="feature">
+      <img src="OIP (2).webp" alt="Fresh Ingredients">
+      <h3>مكونات طازجة</h3>
+      <p>نختار أجود المكونات الطازجة يومياً لضمان أفضل جودة.</p>
+    </div>
+    <div class="feature">
+      <img src="OIP (1).webp" alt="Special Recipes">
+      <h3>وصفات خاصة</h3>
+      <p>وصفات مبتكرة بطابع أصيل تمنحك تجربة فريدة.</p>
+    </div>
+    <div class="feature">
+      <img src="OIP (3).webp" alt="Best Service">
+      <h3>خدمة مميزة</h3>
+      <p>طاقم عمل محترف يضمن لك الراحة والرضا.</p>
+    </div>
+    <div class="feature">
+      <img src="OIP (4).webp" alt="Great Ambience">
+      <h3>أجواء رائعة</h3>
+      <p>تصميم داخلي وجو مريح يناسب العائلات والأصدقاء.</p>
+    </div>
+  </div>
+  <hr>
+ <div class="container">
+    <h1>قائمة الطعام</h1>
+
+    <fieldset class="filters">
+      <legend>تصنيفات الطعام</legend>
+      <!-- لديك 3 أزرار حسب المطلوب — أضفت 'All' اختيارياً -->
+      <button data-filter="all">الكل</button>
+      <button data-filter="Drinks">Drinks</button>
+      <button data-filter="Desserts">Desserts</button>
+      <button data-filter="Main">Main</button>
+    </fieldset>
+
+    <div class="grid" id="menuGrid">
+      <!-- مثال عناصر: لكل عنصر data-category -->
+      <article class="card" data-category="Drinks" aria-label="Iced Coffee">
+        <img src="download (1).jpg" alt="مشروب مثلج">
+        <div class="card-body">
+          <div class="item-info">
+            <p class="item-name">Iced Coffee</p>
+            <p class="item-cat">Drinks</p>
+          </div>
+          <div class="price">EGP 55</div>
+        </div>
+      </article>
+
+      <article class="card" data-category="Desserts" aria-label="Chocolate Cake">
+        <img src="hq720.jpg" alt="كيك الشوكولاتة">
+        <div class="card-body">
+          <div class="item-info">
+            <p class="item-name">Chocolate Cake</p>
+            <p class="item-cat">Desserts</p>
+          </div>
+          <div class="price">EGP 80</div>
+        </div>
+      </article>
+
+      <article class="card" data-category="Main" aria-label="Margherita Pizza">
+        <img src="download (2).jpg" alt="بيتزا مارغريتا">
+        <div class="card-body">
+          <div class="item-info">
+            <p class="item-name">Margherita Pizza</p>
+            <p class="item-cat">Main</p>
+          </div>
+          <div class="price">EGP 120</div>
+        </div>
+      </article>
+
+      <article class="card" data-category="Drinks" aria-label="Fresh Juice">
+        <img src="download.jpg " alt="عصير طبيعي">
+        <div class="card-body">
+          <div class="item-info">
+            <p class="item-name">Fresh Juice</p>
+            <p class="item-cat">Drinks</p>
+          </div>
+          <div class="price">EGP 45</div>
+        </div>
+      </article>
+
+      <article class="card" data-category="Desserts" aria-label="Creme Brulee">
+        <img src="download (3).jpg" alt="كريم بروليه">
+        <div class="card-body">
+          <div class="item-info">
+            <p class="item-name">Crème Brûlée</p>
+            <p class="item-cat">Desserts</p>
+          </div>
+          <div class="price">EGP 95</div>
+        </div>
+      </article>
+
+      <article class="card" data-category="Main" aria-label="Grilled Chicken">
+        <img src="download (4).jpg" alt="دجاج مشوي">
+        <div class="card-body">
+          <div class="item-info">
+            <p class="item-name">Grilled Chicken</p>
+            <p class="item-cat">Main</p>
+          </div>
+          <div class="price">EGP 140</div>
+        </div>
+      </article>
+
+      <!-- أضف مزيد من العناصر بنفس النمط -->
+    </div>
+  <hr>
+  
+  <section class="hero" aria-label="عرض خاص">
+    <img class="hero-image" src="download (5).jpg" alt="صورة طبق مميز">
+
+    <div class="hero-body">
+      <span class="eyebrow">عرض محدود</span>
+      <h1>خصم 30% على كل الأطباق هذا الأسبوع</h1>
+      <p class="lead">استمتع بأشهى الوصفات مع خصم خاص لفترة محدودة — العرض ينتهي قريباً. احجز الآن أو اطلب للتوصيل.</p>
+
+      <div class="countdown" aria-live="polite" aria-atomic="true" id="countdown">
+        <div class="time-box">
+          <div class="num" id="days">00</div>
+          <div class="label">أيام</div>
+        </div>
+        <div class="time-box">
+          <div class="num" id="hours">00</div>
+          <div class="label">ساعات</div>
+        </div>
+        <div class="time-box">
+          <div class="num" id="minutes">00</div>
+          <div class="label">دقائق</div>
+        </div>
+        <div class="time-box">
+          <div class="num" id="seconds">00</div>
+          <div class="label">ثواني</div>
+        </div>
+      </div>
+
+      <a class="cta" href="#" id="ctaBtn">اطلب الآن</a>
+    </div>
+  </section>
+  <hr>
+  
+<section class="testimonials">
+  <h2>آراء عملائنا</h2>
+  <div class="slider" id="testimonialSlider">
+    <div class="slide active">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="عميلة" class="client-img" />
+      <div class="client-name">سارة محمد</div>
+      <div class="client-comment">
+        تجربة رائعة! الطعام كان لذيذًا والتوصيل سريع جدًا. بالتأكيد سأطلب مرة أخرى.
+      </div>
+    </div>
+    <div class="slide">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="عميل" class="client-img" />
+      <div class="client-name">أحمد علي</div>
+      <div class="client-comment">
+        أفضل مطعم جربته. الخدمة ممتازة والطعام طازج دائمًا.
+      </div>
+    </div>
+    <div class="slide">
+      <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="عميلة" class="client-img" />
+      <div class="client-name">منى عبد الله</div>
+      <div class="client-comment">
+        أحببت تنوع القائمة والأسعار المناسبة. أوصي به للجميع.
+      </div>
+    </div>
+  </div>
+
+  <!-- نقاط التنقل -->
+  <div class="dots" id="sliderDots"></div>
+</section>
+<hr>
+
+  <section class="reservation-section">
+    <!-- Reservation Form -->
+    <div class="reservation-form">
+      <h2>Reserve Your Table</h2>
+      <form id="reservationForm">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="tel" name="phone" placeholder="Phone" required>
+        <label for="reservation-date">Date</label>
+        <input type="date" id="reservation-date" name="date" required placeholder="Select Date" title="Select reservation date">
+        <input type="number" name="people" placeholder="Number of People" min="1" required>
+        <button type="submit">Reserve</button>
+      </form>
+    </div>
+
+    <!-- Google Map -->
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.0636229785175!2d31.62369157537975!3d30.0246364208601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14581f9cf9d20d9f%3A0xa24d6e69c259cc25!2z2YXZiNiv2Yog2KfZhNmF2YrZgdmK2Kkg2YTZhNiq2K3Yr9in2YTYqQ!5e0!3m2!1sen!2seg!4v1692977643884!5m2!1sen!2seg" 
+        allowfullscreen="" loading="lazy" title="Google Map showing restaurant location">
+      </iframe>
+    </div>
+  </section>
+<hr>
+<!-- ====== Footer Section ====== -->
+<footer class="footer">
+  
+  <!-- Quick Links -->
+  <div class="footer-links">
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Social Icons -->
+  <div class="footer-social">
+    <a href="#" title="Facebook" aria-label="Facebook">
+      <i class="fab fa-facebook-f" aria-hidden="true"></i>
+    </a>
+    <a href="#" title="Instagram" aria-label="Instagram">
+      <i class="fab fa-instagram" aria-hidden="true"></i>
+    </a>
+    <a href="#" title="Twitter" aria-label="Twitter">
+      <i class="fab fa-twitter" aria-hidden="true"></i>
+    </a>
+    <a href="#" title="YouTube" aria-label="YouTube">
+      <i class="fab fa-youtube" aria-hidden="true"></i>
+    </a>
+  </div>
+  <hr>
+  
+<!-- ===== Sticky Header ===== -->
+<header id="mainHeader">
+  <nav aria-label="Main Navigation">
+    <a href="#home">Home</a> | <a href="#about">About</a> | <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home">
+  <h1 class="fade-in">Welcome to Our Restaurant</h1>
+</section>
+
+<section id="about">
+  <p class="fade-in">We serve the best food in town 🍽️</p>
+</section>
+
+<!-- ===== Testimonials Slider ===== -->
+<section id="testimonials">
+  <h2 class="testimonials-title">Testimonials</h2>
+  <div class="testimonials" id="testimonialSlider">
+    <div class="testimonial">"Amazing food and great service!"</div>
+    <div class="testimonial">"The atmosphere is perfect for family gatherings."</div>
+    <div class="testimonial">"Highly recommend the chef’s special dish!"</div>
+  </div>
+</section>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
